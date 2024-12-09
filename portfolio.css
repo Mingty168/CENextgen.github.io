@@ -1,0 +1,135 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,61,1) 0%, rgba(0,212,255,1) 100%);
+    color: black;
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+p {
+    color : navy;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: darkgrey;
+}
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+}
+.card{
+    padding: 10px;
+    text-align: right;
+
+}
+.text{
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.image1{
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+    border-radius: 40px;
+    border: 10px solid white;
+}
+.image2{
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+.mt{
+    margin-top: 10px;
+}
+.box1{
+    width: 80px;
+    height: 70px;
+    top: 60px;
+    left: 600px;
+    background-color: navy;
+    margin: 20px;
+    padding: 20px;
+}
+.box2{
+    width: 80px;
+    height: 70px;
+    top: 190px;
+    left: 600px;
+    background-color: navy;
+    margin: 20px;
+    padding: 20px;
+}
+.box3{
+    width: 80px;
+    height: 70px;
+    top: 320px;
+    left: 600px;
+    background-color: navy;
+    margin: 20px;
+    padding: 20px;
+}
+.box4{
+    width: 80px;
+    height: 70px;
+    top: 450px;
+    left: 600px;
+    background-color: navy;
+    margin: 20px;
+    padding: 20px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid dodgerblue;
+    height: 500px;
+    margin: 2px;
+    align-items: start;
+    flex-direction: column;
+}
+.flex-items {
+    background-color: lightblue;
+    width: 50vw;
+    height: 38vw;
+    margin: 0px;
+    line-height: 100px;
+    text-align: left;
+    top: 500px;
+}
+.flex-items2 {
+    background-color:gold;
+    width: 50vw;
+    height: 38vw;
+    margin: 0px;
+    line-height: 100px;
+    text-align: left;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: 80px;
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80px;
+    padding: 10px;
+    gap: 20px;
+}

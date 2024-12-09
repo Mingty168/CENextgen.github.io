@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro</title>
+</head>
+<body>
+    <script>
+        let y=10;
+        function f1(x) {
+            console.log("more than 5");
+        }
+        function f2(x) {
+            console.log("more than 2");
+        }
+        function f3(x) {
+            console.log("less than 2");
+            return x-1 ;
+        }
+        if (y>5) {
+            f1();
+        }
+        if (y>2) {
+            f2();
+        }
+        else if (y<2) {
+            f3(y);
+            y=y+7 ;
+            console.log(y);
+        }
+    </script>
+</body>
+</html>

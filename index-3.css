@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    background-color: #000000;
+    color: #09e41b;
+}
+p {
+    color:gold;
+}
+h1 {
+    background-color: white;
+    color: #000000;
+}
+.margin{
+    margin-top: 60px;
+}
+.margin-2{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.text-1{
+    font-size: 22px;
+    color:aliceblue;
+    border : 2px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10px;
+}
+.box{
+    width: 70px;
+    height: 70 px;
+    background-color: #09e41b;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+.black{
+    color: #000000;
+}
+.pink{
+    color:hotpink;
+}
+.blue{
+    color:blue;
+}
+.border-1{
+    border-style: inset;
+    border-color:limegreen;
+}
+.bg{
+    background-color:darkgray;
+}
+.absolute{
+    position: absolute;
+    top: 1000px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid red;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: darksalmon;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid dodgerblue;
+    height: 200px;
+    margin: 2;
+    align-items: end;
+}
+.flex-items {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+    text-align: center;
+    flex-direction: row-reverse;
+}

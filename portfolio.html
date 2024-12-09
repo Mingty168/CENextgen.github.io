@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="portfolio.css" rel="stylesheet">
+
+    <style>
+        .container1 {
+            background-color: lightgray;
+        }
+
+        ul {
+            position: absolute;
+            list-style-type: none;
+            font-size: 20px;
+            padding-left: 0;
+            color: white;
+            right: 50px;
+        }
+
+        button {
+            background-color: #393b39;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a>My Profile</a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+    </nav>
+
+    <!--1-->
+    <div class="grid-container">
+        <img src="Chillguy.jpeg" alt="" class="image1" width="500" height="500">
+        <div align="center" class="mt text grid-box">
+            <span class="box1">M</span>
+            <span class="box2">I</span>
+            <span class="box3">N</span>
+            <span class="box4">G</span>
+        </div>
+        <div class="card">
+            <p>Hello, My name is</p>
+            <h1>Sira Rattanakit</h1>
+            <button id="button">Click Here</button>
+            <div id="container1" align="left"></div>
+        </div>
+    </div>
+
+    <!--2-->
+    <div class="flex-container">
+        <div class="flex-items black">
+            <h2 align="center">Skills</h2>
+            <div class="grid-img">
+                <img src="python.png" alt="" width="150" height="150">
+                <img src="visual.jpg" alt="" width="150" height="150">
+                <img src="js.png" alt="" width="150" height="150">
+                <img src="blender.png" alt="" width="150" height="150">
+            </div>
+            <div>____________________________________________________________</div>
+        </div>
+        <div class="flex-items2 black">
+            <div align="center" class="image2"><video width="500" height="400" controls>
+                <source src="siepo.mp4" type="video/mp4">
+            </video></div>
+        </div>
+    </div>
+
+    <script>
+        const arr = ["TriamUdomSuksa Pattanakarn", "Age : 15"," Date of birth : 26/07/2552",
+                     "Tel : 0615401026", "Line : mingsira", "IG : m_mminggg","__________________________",
+                     "Activity : Playing Games,","Watching Football, Swimming"];
+        const li_arr = [];
+
+        const container1 = document.getElementById("container1");
+
+        const ul_el = document.createElement("ul");
+        container1.appendChild(ul_el);
+
+        let x = 0;
+        const btn = document.getElementById("button");
+
+        ul_el.style.backgroundColor = "darkcyan"
+        ul_el.style.borderRadius = "10px"
+
+
+        let state = true;
+        btn.addEventListener("click", function () {
+            x++
+            console.log("")
+            if (x == 1) {
+                ul_el.style.padding = '30px'
+                for (const item of arr) {
+                    const li_el = document.createElement("li");
+                    li_el.innerText = item;
+                    ul_el.appendChild(li_el);
+                    li_arr.push(li_el);
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>

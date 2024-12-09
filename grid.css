@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    background-color: darkgray;
+    color: navy;
+}
+p {
+    color:black;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    background-color: bisque;
+    padding: 20px;
+    gap: 10px;
+    top: 10px;
+    justify-content: stretch;
+}
+.grid-red{
+    background-color: red;
+    padding: 20px;
+    gap: 10px;
+}
+.grid-blue{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    gap: 10px;
+}
+.bg{
+    background-color: blue;
+}

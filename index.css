@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #08ebeb;
+    color: #010202;
+}
+.text-justify{
+    text-align:justify;
+}
+.bg-white{
+    background-color: azure;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.font-s{
+    font-size: 40px;
+}
+.font-l{
+    font-size: 80px;
+    font-style: italic;
+}
+.rounded-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+}
+.form1{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.font-ss{
+    font-size: 20px;
+}

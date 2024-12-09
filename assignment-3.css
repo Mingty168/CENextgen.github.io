@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    background-color: black;
+    color: black;
+}
+p {
+    color:black;
+}
+h1{
+    color:white;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: stretch;
+    margin-top: -25px;
+}
+.grid-blue{
+    display: grid;
+    background-color: orange;
+    grid-template-columns: 300px;
+    height: 300px;
+    text-align: left;
+    font-size: 30px;
+}
+.grid-red{
+    display: grid;
+    background-color: palevioletred;
+    grid-template-columns: 300px;
+    height: 300px;
+    text-align: left;
+    font-size: 30px;
+}
+@media screen and (max-width: 2000px) and (min-width: 100px){
+    .example {
+        background-color: black;
+    }
+}

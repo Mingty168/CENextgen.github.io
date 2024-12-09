@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMMALOR</title>
+    <style>
+        .container1{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+        <h1>KAMMALOR</h1>
+        <div id="container1"></div>
+
+    <button id="button">Click Here</button>
+    
+    <script>
+        const arr = ["Ming", "Mama , Krapao , Watermelon", "None of ur business", "Hello CE Nextgen", "Playing games"];
+        const li_arr = [];
+
+        const container1 = document.getElementById("container1");
+        const el = document.getElementById("container1");
+
+        const ul_el = document.createElement("ul");
+        ul_el.innerText = "CE Nextgen"
+        container1.appendChild(ul_el);
+
+        
+        ul_el.style.background = "aquamarine"
+
+        let x = 0 ;
+        const btn = document.getElementById("button");
+
+        let state = true;
+        btn.addEventListener("click", function() {
+            x++
+            if (x==1) {
+                for (const item of arr){
+            const li_el = document.createElement("li");
+            li_el.innerText = item;
+            ul_el.appendChild(li_el);
+            li_arr.push(li_el);
+        }
+            }
+        
+        })
+    </script>
+</body>
+</html>
